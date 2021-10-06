@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DashBoardFragment">
+
+    <RelativeLayout
+
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/header">
+        <TextView
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selamat Datang"
+            android:textStyle="normal"
+            android:textSize="28sp"
+            android:layout_marginTop="17dp"
+            android:id="@+id/ucapan_welcome"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:layout_toEndOf="@+id/ucapan_welcome"
+            android:layout_marginTop="10dp"
+            android:id="@+id/nama"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tablayout"
+        app:tabIndicatorHeight="3dp"
+        app:tabMode="fixed"
+        app:tabPaddingTop="15dp"
+        app:tabPaddingBottom="8dp"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/header"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#ececec"
+        android:layout_below="@id/tablayout"
+        android:id="@+id/garis"/>
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/garis"
+        android:layout_marginTop="3dp" />
+
+
+</RelativeLayout>

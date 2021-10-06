@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilFragment"
+    android:padding="15dp">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/foto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/gilang"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nama"
+        android:text="@string/nama"
+        android:layout_below="@+id/foto"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tentang"
+        android:text="@string/desc"
+        android:layout_below="@+id/nim"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nama"
+        android:textAlignment="center"
+        android:id="@+id/nim"
+        android:layout_marginBottom="20dp"/>
+    <ImageView
+        android:id="@+id/logo_univ"
+        android:layout_width="175dp"
+        android:layout_height="186dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="28dp"
+        android:src="@drawable/logo_univ_2" />
+
+    <ImageView
+        android:id="@+id/logo_citiasiainc"
+        android:layout_width="135dp"
+        android:layout_height="123dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="60dp"
+        android:src="@drawable/logo_citiasiainc" />
+
+</RelativeLayout>

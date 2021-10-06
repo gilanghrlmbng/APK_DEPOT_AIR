@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">BismillahUAS</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="login">LOGIN</string>
+
+
+    <string-array name="toko">
+        <item>
+            AL - FAZZA
+        </item>
+        <item>
+            ANUGRAH GALON
+        </item>
+        <item>
+            NATURAL WATER
+        </item>
+        <item>
+            AL - MUBARAK
+        </item>
+    </string-array>
+    <string-array name="brand">
+        <item>
+            Aqua
+        </item>
+        <item>
+            Cleo
+        </item>
+        <item>
+            Club
+        </item>
+        <item>
+            Vit
+        </item>
+    </string-array>
+    <string-array name="jenis">
+        <item>
+            Galon
+        </item>
+        <item>
+            Botol
+        </item>
+        <item>
+            Gelas
+        </item>
+    </string-array>
+    <string name="nama">Halo Nama saya Gilang</string>
+    <string name="desc">Saya mahasiswa Universitas Dinamika Program Studi D3 Sistem Informasi.  Saya membuat program jasa pemesanan di depot air.</string>
+    <string name="title_activity_complete">Complete</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+
+</resources>

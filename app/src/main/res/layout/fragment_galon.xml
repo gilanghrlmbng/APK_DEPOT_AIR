@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".GalonFragment"
+    >
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="2"
+        android:alignmentMode="alignMargins">
+        <androidx.cardview.widget.CardView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            app:cardCornerRadius="8dp"
+            android:background="@color/white"
+            android:id="@+id/cardviewaqua"
+            app:cardElevation="12dp"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/aqua"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AQUA"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="serif"
+                    android:id="@+id/aqua"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp. 21.500"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="serif"
+                    android:id="@+id/hrgaqua"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:layout_gravity="end"
+            app:cardCornerRadius="8dp"
+            android:background="@color/white"
+            android:id="@+id/cardviewclub"
+            app:cardElevation="12dp"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/club"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CLUB"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="serif"
+                    android:id="@+id/club"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp. 15.000"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="serif"
+                    android:id="@+id/hrgclub"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            app:cardCornerRadius="8dp"
+            android:background="@color/white"
+            android:id="@+id/cardviewcleo"
+            android:layout_marginTop="25dp"
+            app:cardElevation="12dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/cleo"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CLEO"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="serif"
+                    android:id="@+id/cleo"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp. 21.000"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="serif"
+                    android:id="@+id/hrgcleo"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:layout_gravity="end"
+            app:cardCornerRadius="8dp"
+            android:background="@color/white"
+            android:id="@+id/cardviewvit"
+            android:layout_marginTop="25dp"
+            app:cardElevation="12dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/vit"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VIT"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="serif"
+                    android:id="@+id/vit"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp. 16.000"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="serif"
+                    android:id="@+id/hrgvit"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="GILANG HERLAMBANG"
+        android:gravity="center"/>-->
+</RelativeLayout>

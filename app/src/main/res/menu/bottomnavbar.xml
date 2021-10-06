@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/dashboard"
+        android:title="Dashboard"
+        android:icon="@drawable/ic_twotone_dashboard_24"
+        app:cnb_backgroundColor="@color/cardview_light_background"/>
+    <item
+        android:id="@+id/store"
+        android:icon="@drawable/ic_store"
+        app:cnb_backgroundColor="@color/white"
+        android:title="Depot" />
+    <item
+        android:id="@+id/shopping"
+        android:title="Keranjang"
+        android:icon="@drawable/ic_shopping_cart"
+        app:cnb_backgroundColor="?attr/colorOnPrimarySurface"/>
+    <!--<item
+        android:id="@+id/list"
+        android:title="List Transaksi"
+        android:icon="@drawable/ic_outline_format_list_bulleted_24"
+        app:cnb_backgroundColor="#FFFFFF"/>-->
+    <item
+        android:id="@+id/profil"
+        android:title="About Me"
+        android:icon="@drawable/ic_baseline_person_outline_24"
+        app:cnb_backgroundColor="#FFFFFF"/>
+</menu>

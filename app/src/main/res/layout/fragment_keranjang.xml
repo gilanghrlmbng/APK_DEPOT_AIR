@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KeranjangFragment"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detail Pesanan"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Produk"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/brand"
+                android:entries="@array/brand"
+                android:layout_marginTop="5dp"/>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/jenis"
+                android:entries="@array/jenis"
+                android:layout_marginTop="5dp"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+       <!--
+
+
+
+       -->
+
+        <!--        <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView3"
+                    android:layout_alignStart="@+id/textView3" />-->
+
+        <!--
+       -->
+
+
+        <!--<TextView
+            android:id="@+id/textViewalamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rg"
+            android:layout_alignStart="@+id/rg"
+            android:layout_marginTop="10dp"
+            android:text="Alamat"
+            />
+
+        <EditText
+            android:id="@+id/inputalamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewalamat"
+            android:layout_alignStart="@+id/textViewalamat"
+            />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jumlah"
+            android:id="@+id/tvjumlah"
+            android:layout_marginTop="7dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvjumlah"
+            android:id="@+id/jumlah"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/depot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jumlah"
+            android:layout_alignStart="@+id/nomor"
+            android:layout_marginTop="5dp"
+            android:text="Pilih Depot" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/toko"
+            android:layout_below="@+id/depot"
+            android:id="@+id/spiner"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:id="@+id/line"
+            android:layout_below="@+id/spiner"
+            android:background="@android:color/darker_gray"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/textViewnama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Pelanggan"
+            android:layout_below="@+id/line"/>
+        <EditText
+            android:id="@+id/namapelanggan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewnama"
+            />
+
+
+        <TextView
+            android:id="@+id/textViewnomor"
+            android:layout_width=  "wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/namapelanggan"
+            android:layout_alignStart="@+id/namapelanggan"
+            android:layout_marginTop="5dp"
+            android:text="Nomor yang bisa dihubungi" />
+
+        <EditText
+            android:id="@+id/nomor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewnomor"
+            android:inputType="number"
+            android:layout_alignStart="@+id/textViewnomor" />
+
+        <TextView
+            android:id="@+id/textViewalamat"
+            android:layout_width=  "wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nomor"
+            android:layout_alignStart="@+id/nomor"
+            android:layout_marginTop="5dp"
+            android:text="Alamat"
+            />
+
+        <EditText
+            android:id="@+id/alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewalamat"
+            android:layout_alignStart="@+id/textViewalamat" />
+        <TextView
+            android:id="@+id/textViewjenkelamin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alamat"
+            android:layout_alignStart="@+id/alamat"
+            android:layout_marginTop="5dp"
+            android:text="Pilih Metode Pembayaran" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/textViewjenkelamin"
+            android:layout_marginTop="0dp"
+            android:id="@+id/rg">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tunai"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/tunai"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E - Wallet"
+                android:id="@+id/ewallet"/>
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rg"
+            android:textStyle="bold"
+            android:text="Total"
+            android:layout_marginTop="0dp"
+            android:id="@+id/btntotal"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragkeranjang"
+            android:layout_below="@+id/btntotal"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+</LinearLayout>

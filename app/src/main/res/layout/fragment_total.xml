@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TotalFragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harga"
+        android:id="@+id/tvharga"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ongkir"
+        android:id="@+id/tvongkir"
+        android:layout_below="@+id/tvharga"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:id="@+id/tvtotal"
+        android:layout_below="@+id/tvongkir"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chip1"
+        android:text=" : "
+        android:layout_alignBaseline="@+id/tvharga"
+        android:layout_toEndOf="@+id/tvharga"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chip2"
+        android:text=" : "
+        android:textStyle="bold"
+        android:layout_below="@+id/harga"
+        android:layout_alignStart="@+id/chip1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chip3"
+        android:text=" : "
+        android:textStyle="bold"
+        android:layout_below="@+id/ongkir"
+        android:layout_alignStart="@+id/chip2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/harga"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/tvharga"
+        android:layout_toEndOf="@+id/chip1"
+        android:layout_marginStart="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/x"
+        android:textStyle="bold"
+        android:text=" X "
+        android:layout_alignBaseline="@+id/tvharga"
+        android:layout_toEndOf="@+id/harga"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/jmlh"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/tvharga"
+        android:layout_toEndOf="@+id/x"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ongkir"
+        android:textStyle="bold"
+        android:layout_below="@+id/harga"
+        android:text="5000"
+        android:layout_alignStart="@+id/harga"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/total"
+        android:textStyle="bold"
+        android:layout_below="@+id/ongkir"
+        android:layout_alignStart="@+id/ongkir"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnlanjut"
+        android:layout_below="@+id/total"
+        android:text="lanjut"
+        android:layout_alignStart="@+id/total"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
